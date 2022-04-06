@@ -1,0 +1,33 @@
+import React from 'react';
+import add from '../media/add.png'
+import gallery from '../media/gallery.png'
+import qr from '../media/qr.png'
+import create from '../media/create.png'
+import tag from '../media/tag.png'
+import { Link } from "react-router-dom";
+import Popup from "../components/Popup"
+import {useState} from 'react';
+
+function BottomNav() {
+  const [buttonPopup, setButtonPopup] = useState(false);
+  return (
+      <div className="bottombar-nav">
+                <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+
+        <div className="row">
+            <Link><button><img src={`${qr}`} style= {{ width: '50%'}} alt="navigateButton"/></button></Link>
+
+          <button onClick={() => setButtonPopup(true)} className="add-button"><img src={`${add}`} alt="navigateButton"/></button>
+            <Link to="/draw"><button><img src={`${create}`} style= {{ width: '100%'}} alt="createButton"/></button></Link>
+            <Link to="/draw"><button><img src={`${tag}`} style= {{ width: '100%'}} alt="createButton"/></button></Link>
+          
+          <Link to="/gallery"><button><img src={`${gallery}`} style= {{ width: '50%'}} alt="navigateButton"/></button></Link>
+        
+        </div>
+        </Popup>
+
+      </div>
+  );
+}
+
+export default BottomNav;

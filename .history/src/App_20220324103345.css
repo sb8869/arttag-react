@@ -1,0 +1,459 @@
+/* @import "file.css";
+
+body, html {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* background-color: #1C778C; */
+
+
+.App-header {
+  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  height: 100vh;
+  min-height : 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  font-size: 20px;
+  /* padding: 1% 12%; */
+  margin: 10px 0px;
+  cursor: pointer;
+  font-family: GilroyBold;
+}
+
+/* @media all and (max-width:30em){
+   a.button2{
+    display:block;
+    margin:0.4em auto;
+   }
+} */
+
+
+  
+  #input {
+    border: none;
+  }
+
+  h1 {
+    font-family: GilroyHeavy;
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+
+  p {
+    font-family: GilroyLight;
+  }
+
+  input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+  }
+
+  .links {
+    color: black;
+  }
+
+  .explore-page {
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+      height: 100vh;
+      min-height : 100vh;
+  }
+
+  .slider-div {
+    position: relative;
+  }
+
+  .gallery {
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+    height: 100vh;
+    min-height : 100vh;
+  }
+
+  .gallery-header {
+    color:white;
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    padding: 0;
+    max-width: 960px;
+  }
+
+  .photos img {
+    display: block;
+    float: left;
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 5% 10%;
+    background-color: #fff;
+  }
+
+
+  #drawButton {
+    color: black;
+  }
+
+  #navbar{
+    text-align: center;
+  } 
+
+  /* https://www.codegrepper.com/code-examples/css/how+to+align+links+horizontally+in+html */
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* .block {
+    width: 100px;
+    box-sizing: content-box;
+    padding: 0% 30%;
+  } */
+
+.nav-content {
+   height: 100%;
+   background-color: #083D4F; 
+  }
+
+  #open-heading {
+    /* padding: 4% 0%; */
+    color: white;
+  }
+
+  .block:active {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    /* padding-bottom: 3px; */
+  }
+
+  .mystyle {
+    width: 100%;
+    /* padding: 25px; */
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    /* box-sizing: border-box; */
+  }
+/* if home is selected, toggle class on underline on home and gray on gallery */
+
+App.css
+.App {
+  text-align: center;
+}
+ 
+.App-logo {
+  height: 40vmin;
+}
+ 
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+ 
+.App-link {
+  color: #09d3ac;
+}
+ 
+slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1 !important;
+}
+
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  /* z-index:1 !important; */
+}
+
+.slick-prev {
+  left: 5% !important;
+  z-index:1 !important;
+}
+
+.slick-next {
+  right: 5% !important;
+  z-index:1 !important;
+}
+
+
+.carousel-img {
+  width: 80%;
+  /* display: block; */
+  /* height: 100%; */
+}
+
+
+/* element.style {
+  display: block;
+} */
+
+ul.slick-dots {
+  position: absolute;
+  top: 630px;
+  color:white;
+  bottom: 0%;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li button:before {
+  color:white;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: white !important;
+  padding: 0%;
+}
+
+ .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+.location-heading {
+  font-family: GilroyRegular;
+  font-size: 18px;
+  color: white;
+}
+
+label{
+  font-family: GilroyBold;
+  font-size: 15px;
+  color: white;
+}
+
+.main__slider-wrapper {
+  padding: 0;
+}
+
+.location-name {
+  width: 100%;
+  padding: 0% !important;
+} 
+
+.container {
+  position: relative;
+}
+
+.location-heading {
+  position: absolute;
+  top: 590px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.artTag-header {
+  display: inline-block;
+  text-align: center;
+  z-index: 1 !important;
+  top: 100%;
+}
+
+.text-block{
+  /* position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; */
+  color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: content-box !important;
+}
+
+.navigate-button{
+
+  background-color: transparent;
+  border: none;
+}
+
+
+.row {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+
+.bottomnav-button {
+  /* flex: 33.3%;
+  background-color: transparent;
+  border: none;
+  padding: 5px; */
+  flex: 33.33%;
+  padding: 5px;
+  box-sizing: border-box !important;
+
+  /* background-color: transparent;
+  border: none;
+  max-width: 33.33%;
+  height:33.33%;
+  padding: 5px; */
+}
+
+.bottomnav-button button {
+  background-color: transparent;
+  border: none;
+}
+
+.navigate-button img {
+  width: 100%;
+
+}
+
+.mapbox-content {
+  color:black; 
+  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  height: 100vh;
+  min-height : 100vh;
+}
+
+.back-button button{
+  background-color: transparent;
+}
+
+.bottombar-nav {
+  position: absolute;
+  width: 305px;
+  height: 56px;
+  left: 35px;
+  top: 760px;
+
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 42px;
+} 
+
+/* Popup to create or tag and image */
+.popup {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 80%;
+  max-width: 640px;
+  background-color: white;
+  border-radius: 5%;
+}
+
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 220px;
+  right: 16px;
+}
+
+/* Landing page - logo placement */
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.landing-page {
+  height: 100%;
+  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  height: 100vh;
+  min-height : 100vh;
+  
+}
+
+.landing-page img {
+  width: 25%; 
+}
+
+#art-tag {
+  color: white;
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  font-size: 2.3rem;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
