@@ -11,6 +11,7 @@ import booth from '../media/boothBGScreen.png'
 import gannet from '../media/gannettBGScreen.png'
 import navigate from '../media/navigate.png'
 import {Link} from 'react-router-dom';
+import BottomNav from './BottomNav';
 
 const Carousel = () => {
     const sliderRef = useRef();
@@ -58,10 +59,10 @@ const Carousel = () => {
   
                 <div className="container"key={slide.id}>
 
-                  <img className="carousel-img" src={`${slide.image}`} />
+                  <img className="carousel-img" width="400px" height="350px" src={`${slide.image}`} />
                   <div className="text-block">
 
-                    <label className="location-name">{slide.label}</label>
+                    <label className="location-name" id={`${slide.label}`}>{slide.label}</label>
                   </div>
                   <Link to="/mapbox"><button className="navigate-button"><img id="navButton" src={`${navigate}`} alt="navigateButton"/></button></Link>
 
@@ -70,6 +71,7 @@ const Carousel = () => {
               )}
             </Slider>
             <p className="location-heading">Location</p>
+            <BottomNav></BottomNav>
         </div>
       </>
     );
