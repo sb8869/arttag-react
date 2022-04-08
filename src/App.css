@@ -331,12 +331,12 @@ ul.slick-dots {
 } 
 
 .slick-prev {
-  top: 64% !important;
+  top: 65% !important;
   width: 70px !important;
 }
 
 .slick-next {
-  top: 64% !important;
+  top: 65% !important;
   width: 70px !important;
 }
 
@@ -346,7 +346,8 @@ ul.slick-dots {
   color: unset !important;
   opacity: 1 !important;
   background: url(./icons/previous.png);
-  padding-bottom: 40px;
+  padding-bottom: 37px;
+  padding-right: 14.8px;
 }
 
 .slick-next:before{
@@ -354,7 +355,8 @@ ul.slick-dots {
   color: unset !important;
   opacity: 1 !important;
   background: url(./icons/next.png);
-  padding-bottom: 40px;
+  padding-bottom: 37px;
+  padding-right: 14.8px;
 }
 
 
