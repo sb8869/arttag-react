@@ -13,7 +13,7 @@ function BottomNav() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
       <div className="bottombar-nav">
-            <Link><button><img src={`${qr}`} style= {{ width: '50%'}} alt="navigateButton"/></button></Link>
+            <Link><button><img src={`${qr}`} class="qr-img" style= {{ width: '50%'}} alt="navigateButton"/></button></Link>
 
           <button onClick={() => setButtonPopup(true)} className="add-button"><img src={`${add}`} alt="navigateButton"/></button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>

@@ -59,7 +59,7 @@ const Carousel = () => {
   
                 <div className="container"key={slide.id}>
 
-                  <img className="carousel-img" width="400px" height="350px" src={`${slide.image}`} />
+                  <img className="carousel-img" src={`${slide.image}`} />
                   <div className="text-block">
 
                     <label className="location-name" id={`${slide.label}`}>{slide.label}</label>

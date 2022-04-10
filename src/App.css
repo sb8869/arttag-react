@@ -21,9 +21,9 @@ body, html {
 /* background-color: #1C778C; */
 
 .App-header {
-  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
-  min-height : 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,142 +61,136 @@ a {
 } */
 
 
-  
-  #input {
-    border: none;
-  }
+#input {
+  border: none;
+}
 
-  h1 {
-    font-family: GilroyHeavy;
-    letter-spacing: .2rem;
-    text-align: center;
-  }
+h1 {
+  font-family: GilroyHeavy;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
 
-  p {
-    font-family: GilroyLight;
-  }
+p {
+  font-family: GilroyLight;
+}
 
-  input{
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid white;
-  }
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+}
 
-  .links {
-    color: black;
-  }
+.links {
+  color: black;
+}
 
-  .explore-page {
-      /* position: absolute;
+.explore-page {
+  /* position: absolute;
       width: 100%;
       color: #fff; */
-      background-image: linear-gradient(#083D4F, #10839E, #083D4F);
-      height: 100vh;
-      min-height : 100vh;
-  }
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
+  height: 100vh;
+  min-height: 100vh;
+}
 
-  .slider-div {
-    position: relative;
-  }
+.slider-div {
+  position: relative;
+}
 
-  .gallery-content {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: linear-gradient(#083D4F, #10839E, #083D4F);
-    height: 100vh;
-    min-height : 100vh;
-  }
+.gallery-content {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
+  height: 100vh;
+  min-height: 100vh;
+}
 
-  .gallery-header {
-    color:white;
-    margin: 0px;
-  }
+.gallery-header {
+  color: white;
+  margin: 0px;
+}
 
-  .photos {
-    /* display: flex;
+.photos {
+  /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start; */
-    /* align-content: stretch; */
-    /* padding: 50%;
+  /* align-content: stretch; */
+  /* padding: 50%;
     max-width: 960px; */
 
-    margin: 5% 0 0 5%;
+  margin: 5% 0 0 5%;
+}
 
-  }
+.photos img {
+  /* display: block; */
+  /* float: left; */
+  /* flex: 0 0 auto; */
+  width: 35%;
+  padding: 1% 25%;
+  margin: 3% 5%;
+  vertical-align: middle;
+  /* margin: 10% 10%; */
+  background-color: #fff;
+}
 
-  .photos img {
-    /* display: block; */
-    /* float: left; */
-    /* flex: 0 0 auto; */
-    width: 35%;
-    padding: 1% 25%;
-    margin: 3% 5%;
-    vertical-align: middle;
-    /* margin: 10% 10%; */
-    background-color: #fff;
-    
-  }
+#drawButton {
+  color: black;
+}
 
+#navbar {
+  text-align: center;
+}
 
-  #drawButton {
-    color: black;
-  }
-
-  #navbar{
-    text-align: center;
-  } 
-
-  /* https://www.codegrepper.com/code-examples/css/how+to+align+links+horizontally+in+html */
-  .links {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  /* .block {
+/* https://www.codegrepper.com/code-examples/css/how+to+align+links+horizontally+in+html */
+.links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* .block {
     width: 100px;
     box-sizing: content-box;
     padding: 0% 30%;
   } */
 
 .nav-content {
-   height: 100%;
-   background-color: #083D4F; 
-  }
+  height: 100%;
+  background-color: #083d4f;
+}
 
-  #open-heading {
-    /* padding: 4% 0%; */
-    color: white;
-  }
+#open-heading {
+  /* padding: 4% 0%; */
+  color: white;
+}
 
-  .block:active {
-    color: white;
-    text-decoration: none;
-    border-bottom: 2px solid white;
-    /* padding-bottom: 3px; */
-  }
+.block:active {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  /* padding-bottom: 3px; */
+}
 
-  .mystyle {
-    width: 100%;
-    /* padding: 25px; */
-    background-color: coral;
-    color: white;
-    font-size: 25px;
-    /* box-sizing: border-box; */
-  }
+.mystyle {
+  width: 100%;
+  /* padding: 25px; */
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  /* box-sizing: border-box; */
+}
 /* if home is selected, toggle class on underline on home and gray on gallery */
 
-App.css
-.App {
+App.css .App {
   text-align: center;
 }
- 
+
 .App-logo {
   height: 40vmin;
 }
- 
 
 .App-header {
   background-color: #282c34;
@@ -208,7 +202,7 @@ App.css
   font-size: calc(10px + 2vmin);
   color: white;
 }
- 
+
 .App-link {
   color: #09d3ac;
 }
@@ -217,16 +211,17 @@ App.css
   background-color: #2e5f70;
 }
 
-h1#gallery-header {
+/* h1#gallery-header {
   font-size: 36px;
   line-height: 102%;
   font-weight: 800;
   padding-top: 10%;
   color: #ffffff;
   font-style: normal;
-}
+} */
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   font-size: 0;
   line-height: 0;
   position: absolute;
@@ -241,14 +236,13 @@ h1#gallery-header {
   outline: none;
   background: transparent;
 }
- 
+
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
   top: 50%;
   z-index: 1 !important;
 }
-
 
 .slides {
   position: relative;
@@ -261,22 +255,24 @@ h1#gallery-header {
   /* z-index:1 !important; */
 }
 
-.slick-prev {
+/* .slick-prev {
   left: 5% !important;
-  z-index:1 !important;
+  z-index: 1 !important;
 }
 
 .slick-next {
   right: 5% !important;
-  z-index:1 !important;
-}
+  z-index: 1 !important;
+} */
 
+img.carousel-img {
+  width: 80%;
+  height: 39%;
+}
 
 .carousel-img {
   width: 80%;
-  padding: 20% 7% 7% 9%; /* Before: 20% 7% 7% 7%; */
-  /* display: block; */
-  /* height: 100%; */
+  padding: 20% 7% 7% 9%;
 }
 
 .container {
@@ -285,7 +281,6 @@ h1#gallery-header {
   padding-left: 0 !important;
 }
 
-
 /* element.style {
   display: block;
 } */
@@ -293,7 +288,7 @@ h1#gallery-header {
 ul.slick-dots {
   position: absolute;
   top: 59%;
-  color:white;
+  color: white;
   bottom: 0%;
   list-style: none;
   text-align: center;
@@ -304,17 +299,17 @@ ul.slick-dots {
 }
 
 .slick-dots li button:before {
-  color:white;
+  color: white;
 }
 
 .slick-dots li.slick-active button:before {
-  opacity: .75;
+  opacity: 0.75;
   color: white !important;
   padding: 0%;
 }
 
- .slick-dots li button:before {
-  font-family: 'slick';
+.slick-dots li button:before {
+  font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   position: absolute;
@@ -322,13 +317,13 @@ ul.slick-dots {
   left: 0;
   width: 20px;
   height: 20px;
-  content: '•';
+  content: "•";
   text-align: center;
-  opacity: .25;
+  opacity: 0.25;
   color: white !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} 
+}
 
 .slick-prev {
   top: 65% !important;
@@ -340,8 +335,7 @@ ul.slick-dots {
   width: 70px !important;
 }
 
-
-.slick-prev:before{
+.slick-prev:before {
   font-family: unset !important;
   color: unset !important;
   opacity: 1 !important;
@@ -350,7 +344,7 @@ ul.slick-dots {
   padding-right: 14.8px;
 }
 
-.slick-next:before{
+.slick-next:before {
   font-family: unset !important;
   color: unset !important;
   opacity: 1 !important;
@@ -359,14 +353,13 @@ ul.slick-dots {
   padding-right: 14.8px;
 }
 
-
 .location-heading {
   font-family: GilroyRegular;
   font-size: 18px;
   color: white;
 }
 
-label{
+label {
   font-family: GilroyBold;
   font-size: 15px;
   color: white;
@@ -376,23 +369,269 @@ label{
   padding: 0;
 }
 
-.location-name {
-  position: absolute;
-  top: 57%;
-  width: 100%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+/* Media Queries - Phone sizes */
+@media screen and (min-width: 280px) and (min-height: 653px) {
+  h1#gallery-header {
+    font-size: 32px;
+    line-height: 102%;
+    font-weight: 800;
+    padding-top: 10%;
+    color: #ffffff;
+    font-style: normal;
+  }
+
+  .location-name {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+  
+  label.location-name {
+    font-family: "GilroyBold";
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    line-height: 102%;
+  }
+  
+  [id="George Eastman Building"] {
+    left: 58%;
+  }
+
+  .slick-prev {
+    left: 2% !important;
+    z-index: 1 !important;
+  }
+  
+  .slick-next {
+    right: 2% !important;
+    z-index: 1 !important;
+  }
+
+  .navigate-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 31.5%;
+    left: 25%;
+    top: 52%;
+  }
+
+  .add-button img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 33%;
+  }
+  
+  .bottombar-nav {
+    position: absolute;
+    width: 80%;
+    height: 8%;
+    left: 10%;
+    bottom: 4.5%;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 42px;
+  }
 }
 
-label.location-name {
-  font-family: 'GilroyBold';
-  font-size: 24px;
-  letter-spacing: 0.03em;
-  line-height: 102%;
+@media screen and (min-height: 739px){
+  .location-name {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+  }
+  
+  [id="George Eastman Building"] {
+    left: 67%;
+  }
+
+  .add-button img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+  
+  .bottombar-nav {
+    position: absolute;
+    width: 75%;
+    height: 7.5%;
+    left: 12.5%;
+    bottom: 5%;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 42px;
+  }
 }
 
-[id='George Eastman Building']{
-  left: 65%;
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  h1#gallery-header {
+    font-size: 36px;
+    line-height: 102%;
+    font-weight: 800;
+    padding-top: 10%;
+    color: #ffffff;
+    font-style: normal;
+  }
+
+  .location-name {
+    position: absolute;
+    top: 56%;
+    width: 100%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
+  
+  label.location-name {
+    font-family: "GilroyBold";
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 102%;
+  }
+  
+  [id="George Eastman Building"] {
+    left: 60%;
+  }
+
+  .slick-prev {
+    left: 2% !important;
+    z-index: 1 !important;
+  }
+  
+  .slick-next {
+    right: 2% !important;
+    z-index: 1 !important;
+  }
+
+  .navigate-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 35%;
+    left: 25%;
+    top: 50%;
+  }
+
+  ul.slick-dots {
+    position: absolute;
+    top: 58%;
+    color: white;
+    bottom: 0%;
+    list-style: none;
+    text-align: center;
+  }
+
+  img.carousel-img {
+    width: 67%;
+    height: 40%;
+  }
+  
+  .carousel-img {
+    width: 80%;
+    padding: 12% 7% 7% 15%;
+  }
+
+  .add-button img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+  }
+  
+  .bottombar-nav {
+    position: absolute;
+    width: 75%;
+    height: 8.5%;
+    left: 12.5%;
+    bottom: 3%;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 42px;
+  }
+}
+
+/* All other screens */
+@media screen and (min-width: 376px) and (min-height: 668px) {
+  .location-name {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  
+  [id="George Eastman Building"] {
+    left: 65%;
+  }
+
+  .slick-prev {
+    left: 5% !important;
+    z-index: 1 !important;
+  }
+  
+  .slick-next {
+    right: 5% !important;
+    z-index: 1 !important;
+  }
+
+  .navigate-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    height: 31.5%;
+    left: 25%;
+    top: 51.5%;
+  }
+
+  ul.slick-dots {
+    position: absolute;
+    top: 59%;
+    color: white;
+    bottom: 0%;
+    list-style: none;
+    text-align: center;
+  }
+
+  img.carousel-img {
+    width: 80%;
+    height: 39%;
+  }
+  
+  .carousel-img {
+    width: 80%;
+    padding: 20% 7% 7% 9%;
+  }
+
+  .add-button img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+  }
+  
+  .bottombar-nav {
+    position: absolute;
+    width: 75%;
+    height: 6%;
+    left: 12.5%;
+    bottom: 7%;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 42px;
+  }
 }
 
 .container {
@@ -416,7 +655,7 @@ label.location-name {
   top: 100%;
 }
 
-.text-block{
+.text-block {
   /* position: absolute;
   top: 600px;
   left: 50%;
@@ -425,18 +664,19 @@ label.location-name {
   color: white;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: content-box !important;
 }
 
-.navigate-button{
+/* .navigate-button {
   background-color: transparent;
   border: none;
   position: absolute;
-  /* width: 330px; */
   height: 31.5%;
   left: 25%;
-}
+} */
 
 img#navButton {
   width: 62%;
@@ -444,10 +684,10 @@ img#navButton {
 }
 
 .bottombar-nav {
-  display:flex !important; 
-  flex-direction: row !important; 
-  flex-wrap: nowrap !important; 
-  justify-content: space-around !important; 
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-around !important;
 }
 
 .bottombar-nav button {
@@ -460,37 +700,15 @@ img#navButton {
 } */
 
 .mapbox-content {
-  color:black; 
-  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  color: black;
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
-  min-height : 100vh;
+  min-height: 100vh;
 }
 
-.back-button button{
+.back-button button {
   background-color: transparent;
 }
-
-.add-button img{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 30%;
-}
-
-.bottombar-nav {
-  position: absolute;
-  width: 75%;
-  height: 6%;
-  left: 12.5%;
-  /* top: 760px; */
-  bottom: 7%;
-
-  background: rgba(196, 196, 196, 0.2);
-  border-radius: 42px;
-} 
 
 /* Popup to create or tag and image */
 .popup {
@@ -499,7 +717,7 @@ img#navButton {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -518,7 +736,7 @@ img#navButton {
   bottom: 18%;
   padding: 30px;
   background-color: white;
-  border-radius: 5%; 
+  border-radius: 5%;
   transform: translate(-7%, 50%);
 }
 
@@ -532,7 +750,7 @@ img#navButton {
 
 .popup-inner .close-btn img {
   width: 100%;
-} 
+}
 
 /* Landing page - logo placement */
 .center {
@@ -545,14 +763,13 @@ img#navButton {
 
 .landing-page {
   height: 100%;
-  background-image: linear-gradient(#083D4F, #10839E, #083D4F);
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
-  min-height : 100vh;
-  
+  min-height: 100vh;
 }
 
 .landing-page img {
-  width: 25%; 
+  width: 25%;
 }
 
 #art-tag {
@@ -566,13 +783,13 @@ img#navButton {
 }
 
 /***** DrawingApp *******/
-/* alt + shift + a  || ctrl + / */  
+/* alt + shift + a  || ctrl + / */
 /* PAINT APP CSS */
 .paint-app {
   background-color: #083849;
 }
 
-.toolButton button{
+.toolButton button {
   background-color: transparent;
   border: none;
   padding: 20px 10px;
@@ -600,11 +817,15 @@ img#navButton {
   justify-content: space-around;
 }
 
-.top-tools .toolButton, .bottom-tools .toolButton {
+.top-tools .toolButton,
+.bottom-tools .toolButton {
   padding: 5% 0%;
 }
 
-#save-button, #redo-button, #undo-button, #trash-button {
+#save-button,
+#redo-button,
+#undo-button,
+#trash-button {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
