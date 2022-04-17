@@ -38,7 +38,7 @@ const Gallery = () => {
       <BottomNav></BottomNav>
 
       <div id="myModal" className="modal">
-        <span className="close">&times;</span>
+        <span className="close" onClick={closeSpan}>&times;</span>
         <img className="modal-content" id="img01" />
       </div>
     </div>
@@ -63,10 +63,8 @@ for (var i = 0; i < images.length; i++) {
   }
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
+const closeSpan = () => {
+  modal.style.display = 'none';
 }
 
 
