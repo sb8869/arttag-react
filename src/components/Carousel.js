@@ -84,7 +84,6 @@ const Carousel = () => {
           ))}
         </Slider>
         <p className="location-heading">Location</p>
-        {/* <BottomNav></BottomNav> */}
       </div>
     </>
   );

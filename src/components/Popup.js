@@ -14,10 +14,9 @@ function Popup(props) {
             <div className="popup-inner">
                 <div className="popup-contents">
                     {props.children}                    
-                    <button className="close-btn" onClick={() => props.setTrigger(false)}><img src={`${cancel}`} alt="cancelButton"/></button>
                 </div>
             </div>
-            
+            <button className="close-btn" onClick={() => props.setTrigger(false)}><img src={`${cancel}`} alt="cancelButton"/></button>
         </div>
     ) : "";
 }
