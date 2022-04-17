@@ -10,6 +10,8 @@ import Carousel from './components/Carousel';
 import DrawingApp from './DrawingApp';
 import Scan from './Camera'
 import './App.css';
+/* 
+import Test from './P5Test' */
 
 import{BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import { useNavigate } from "react-router-dom";
@@ -44,6 +46,9 @@ function App() {
               <Route path="/scan">
                 <Scan/>
               </Route>
+              {/* <Route path="/test">
+                <Test/>
+              </Route> */}
             </Switch>
           </div>
       </div>

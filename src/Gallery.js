@@ -24,44 +24,50 @@ const Gallery = () => {
       <div className="gallery" style={{ overflow: "scroll", height: "75vh" }}>
         <div className="photos">
           <img src={sketch1} id="myImg" className="allImg"></img>
-          <img src={sketch2} className="allImg"></img>
-          <img src={sketch3} className="allImg"></img>
-          <img src={sketch4} className="allImg"></img>
-          <img src={sketch5} className="allImg"></img>
-          <img src={sketch6} className="allImg"></img>
-          <img src={sketch7} className="allImg"></img>
-          <img src={sketch8} className="allImg"></img>
-          <img src={sketch9} className="allImg"></img>
-          <img src={sketch10} className="allImg"></img>
+          <img src={sketch2} id="myImg" className="allImg"></img>
+          <img src={sketch3} id="myImg" className="allImg"></img>
+          <img src={sketch4} id="myImg" className="allImg"></img>
+          <img src={sketch5} id="myImg" className="allImg"></img>
+          <img src={sketch6} id="myImg" className="allImg"></img>
+          <img src={sketch7} id="myImg" className="allImg"></img>
+          <img src={sketch8} id="myImg" className="allImg"></img>
+          <img src={sketch9} id="myImg" className="allImg"></img>
+          <img src={sketch10} id="myImg" className="allImg"></img>
         </div>
       </div>
       <BottomNav></BottomNav>
 
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01" />
+      <div id="myModal" className="modal">
+        <span className="close">&times;</span>
+        <img className="modal-content" id="img01" />
       </div>
     </div>
   );
 };
 
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('allImg');
+// the image in the modal
 var modalImg = document.getElementById("img01");
-//img.onclick = function(){
-  //modal.style.display = "block";
-  //modalImg.src = this.src;
-  console.log("clicked here")
-//}
 
-// Get the <span> element that closes the modal
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+}
+
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-/* span.onclick = function() { 
+span.onclick = function() {
   modal.style.display = "none";
-} */
+}
+
 
 export default Gallery;
