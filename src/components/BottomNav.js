@@ -17,8 +17,8 @@ function BottomNav() {
 
           <button onClick={() => setButtonPopup(true)} className="add-button"><img src={`${add}`} alt="navigateButton"/></button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <Link to="/drawingApp"><button><img src={`${create}`} style= {{ width: '100%'}} alt="createButton"/></button></Link>
-            <Link to="/drawingApp"><button><img src={`${tag}`} style= {{ width: '100%'}} alt="createButton"/></button></Link>
+            <Link to="/drawingApp"><button><img src={`${create}`} id="popup-tab" alt="createButton"/></button></Link>
+            <Link to="/drawingApp"><button><img src={`${tag}`} id="popup-tab" alt="createButton"/></button></Link>
           </Popup>
           
           <Link to="/gallery"><button><img src={`${gallery}`} style= {{ width: '50%'}} alt="navigateButton"/></button></Link>
