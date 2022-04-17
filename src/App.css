@@ -399,6 +399,10 @@ label {
     left: 58%;
   }
 
+  [id="Gene Polisseni Center"] {
+    left: 63%;
+  }
+
   .slick-prev {
     left: 2% !important;
     z-index: 1 !important;
@@ -452,6 +456,10 @@ label {
     left: 67%;
   }
 
+  [id="Gene Polisseni Center"] {
+    left: 71%;
+  }
+
   .add-button img {
     position: absolute;
     margin: auto;
@@ -500,6 +508,10 @@ label {
   
   [id="George Eastman Building"] {
     left: 60%;
+  }
+
+  [id="Gene Polisseni Center"] {
+    left: 65%;
   }
 
   .slick-prev {
@@ -573,6 +585,10 @@ label {
   
   [id="George Eastman Building"] {
     left: 65%;
+  }
+
+  [id="Gene Polisseni Center"] {
+    left: 69%;
   }
 
   .slick-prev {

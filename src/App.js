@@ -8,7 +8,7 @@ import Draw from './Draw';
 import Mapbox from './MapBox';
 import Carousel from './components/Carousel';
 import DrawingApp from './DrawingApp';
-import Scan from './QR'
+import Scan from './Camera'
 import './App.css';
 
 import{BrowserRouter as Router, Route, Switch} from 'react-router-dom';
