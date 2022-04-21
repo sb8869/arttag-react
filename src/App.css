@@ -20,6 +20,29 @@ body, html {
 }
 /* background-color: #1C778C; */
 
+
+.map-container {
+  height: 100vh;
+}
+
+.marker {
+  background-image: url('./media/arttaglogo.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .App-header {
   background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
@@ -92,6 +115,7 @@ input {
   background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .slider-div {
@@ -101,6 +125,7 @@ input {
 .gallery-content {
   max-width: 100%;
   margin: 0 auto;
+  overflow:hidden;
   background-image: linear-gradient(#083d4f, #10839e, #083d4f);
   height: 100vh;
   min-height: 100vh;
@@ -109,6 +134,8 @@ input {
 .gallery-header {
   color: white;
   margin: 0px;
+  padding-top: 9.25%;
+  font-size: 36px;
 }
 
 .photos {
@@ -869,8 +896,24 @@ img#navButton {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+/* https://www.30secondsofcode.org/css/s/zoomin-zoomout-animation */
+#zoom-in-zoom-out {
+  animation: zoom-in-zoom-out 2s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .landing-page {
@@ -897,9 +940,6 @@ img#navButton {
 /***** DrawingApp *******/
 /* alt + shift + a  || ctrl + / */
 /* PAINT APP CSS */
-.paint-app {
-  background-color: #083849;
-}
 
 .toolButton button {
   background-color: transparent;
@@ -924,14 +964,10 @@ img#navButton {
   justify-content: space-around;
 }
 
-.top-tools {
-  display: flex;
-  justify-content: space-around;
-}
 
 .top-tools .toolButton,
 .bottom-tools .toolButton {
-  padding: 5% 0%;
+  /* padding: 5% 0%; */
 }
 
 #save-button,

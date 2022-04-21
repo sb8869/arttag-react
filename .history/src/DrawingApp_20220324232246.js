@@ -11,18 +11,18 @@ function DrawingApp() {
   return (
       <div className="paint-app">
           <div className='top-tools'>
-                <button className="toolButton"><img src={back} width="auto"/></button>
-                <button className="toolButton"><img src={undo} width="auto"/></button>
-                <button className="toolButton"><img src={redo} width="auto"/></button>
-                <button className="toolButton"><img src={done} width="auto"/></button>
+                <button class="toolButton"><img src={back} width="auto"/></button>
+                <button class="toolButton"><img src={undo} width="auto"/></button>
+                <button class="toolButton"><img src={redo} width="auto"/></button>
+                <button class="toolButton"><img src={done} width="auto"/></button>
                 
                 
           </div>
           
           <div className='bottom-tools'>
-                <button className="toolButton"><img src={brush} width="auto"/></button>
-                <button className="toolButton"><img src={eraser} width="auto"/></button>
-                <button className="toolButton"><img src={color} width="auto"/></button>
+                <button class="toolButton"><img src={brush} width="auto"/></button>
+                <button class="toolButton"><img src={eraser} width="auto"/></button>
+                <button class="toolButton"><img src={color} width="auto"/></button>
           </div>
       </div>
   );

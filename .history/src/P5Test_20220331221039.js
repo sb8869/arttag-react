@@ -1,0 +1,34 @@
+import React from "react";
+import Sketch from "react-p5";
+
+	let x = 50;
+    let y = 50;
+    let colorPicker;
+export default (props) => {
+	const setup = (p5, canvasParentRef) => {
+		// use parent to render the canvas in this ref
+		// (without that p5 will render the canvas outside of your component)
+        p5.createCanvas(500, 500).parent(canvasParentRef);
+        colorPicker = p5.createColorPicker('#ed225d');
+	};
+
+	const draw = (p5) => {
+		p5.background(0);
+		p5.ellipse(x, y, 70, 70);
+		// NOTE: Do not use setState in the draw function or in functions that are executed
+		// in the draw function...
+		// please use normal variables or class properties for these purposes
+		x++;
+    };
+    
+    const printOut = (p5)=> {
+        console.log(colorPicker.value())
+    }
+
+	return(
+        <div>
+            <Sketch setup={setup} draw={draw} />
+            <button onClick={printOut}></button>
+        </div>
+    );
+};
