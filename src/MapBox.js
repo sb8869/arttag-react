@@ -42,7 +42,7 @@ class Mapbox extends React.PureComponent {
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-77.6743036, 43.0840157]
+                        coordinates: [-77.6745810, 43.0842006]
                     },
                     properties: {
                         title: 'Student Alumni Union',
@@ -53,7 +53,7 @@ class Mapbox extends React.PureComponent {
                     type: 'Feature',
                     geometry: {
                         type: 'Point',
-                        coordinates: [-77.675446, 43.084987]
+                        coordinates: [-77.6750390, 43.0843808]
                     },
                     properties: {
                         title: 'George Eastman Hall',
@@ -68,6 +68,28 @@ class Mapbox extends React.PureComponent {
                     },
                     properties: {
                         title: 'James E. Booth Hall',
+                        description: ''
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-77.6767841, 43.0853202]
+                    },
+                    properties: {
+                        title: 'James E. Booth Hall',
+                        description: ''
+                    }
+                },
+                {
+                    type: 'Feature',
+                    geometry: {
+                        type: 'Point',
+                        coordinates: [-77.6757035, 43.0850880]
+                    },
+                    properties: {
+                        title: 'Frank E. Gannett Hall',
                         description: ''
                     }
                 }
