@@ -27,3 +27,9 @@
     src: local('Gilroy-Regular'),
         url('./fonts/Gilroy-Regular.ttf') format('truetype');
 }
+
+@font-face{
+    font-family:'GilroySemiBold';
+    src: local('Gilroy-SemiBold'),
+        url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
+}

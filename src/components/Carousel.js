@@ -5,9 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../App.css";
 import SAU from '../media/sauBGScreen.png'
-import gordon from '../media/gordonBGScreen.png'
+import gpc from '../media/PolisseniBGScreen.png'
+/* import gordon from '../media/gordonBGScreen.png' */
 import george from '../media/eastmanBGScreen.png'
 import booth from '../media/boothBGScreen.png'
+import boothMain from '../media/boothMainBGScreen.png'
 import gannet from '../media/gannettBGScreen.png'
 import navigate from '../media/navigate.png'
 import {Link} from 'react-router-dom';
@@ -28,7 +30,7 @@ const Carousel = () => {
     const slidesData = [
       {
         id: 1,
-        image: gordon,
+        image: gpc,
         label: "Gene Polisseni Center",
       },
       {
@@ -48,7 +50,7 @@ const Carousel = () => {
       },
       {
         id: 5,
-        image: booth,
+        image: boothMain,
         label: "James E. Booth Hall",
       },
       {
@@ -66,12 +68,13 @@ const Carousel = () => {
   
                 <div className="container"key={slide.id}>
 
-                  <img className="carousel-img" src={`${slide.image}`} />
+                  <img className="carousel-img" src={`${slide.image}`} alt="carousel-images"/>
                   <div className="text-block">
 
                     <label className="location-name" id={`${slide.label}`}>{slide.label}</label>
                   </div>
-                  <Link to="/mapbox"><button className="navigate-button"><img id="navButton" src={`${navigate}`} alt="navigateButton"/></button></Link>
+                  <div className='navigation-Div' onClick={console.log("clicked")}>
+                  <button className="navigate-button"><Link to="/mapbox"><img id="navButton" src={`${navigate}`} alt="navigateButton"/></Link></button></div>
 
                 </div>
   

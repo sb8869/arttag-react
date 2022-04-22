@@ -1,8 +1,8 @@
 import Explore from './Explore';
 import Gallery from './Gallery';
-import Landing from './Landing.js';
-import Scan from './Camera';
-import Mapbox from './mapbox';
+import Landing from './Landing.js'
+import Scan from './Camera'
+import MapBox from './MapBox';
 
 import Carousel from './components/Carousel';
 
@@ -38,7 +38,7 @@ function App() {
                 <Scan/>
               </Route>
               <Route path="/mapbox">
-                <Mapbox/>
+                <MapBox/>
               </Route>
             </Switch>
           </div>

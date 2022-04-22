@@ -20,28 +20,9 @@ body, html {
 }
 /* background-color: #1C778C; */
 
-
-.map-container {
-  height: 60vh;
-  margin-top: 10vh;
-}
-
-.marker {
-  background-image: url('./media/arttaglogo.png');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.mapboxgl-popup {
-  max-width: 200px;
-}
-
-.mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+.qr-image-wrapper section div {
+  box-shadow: unset !important;
+  border: unset !important;     
 }
 
 .App-header {
@@ -113,10 +94,12 @@ input {
   /* position: absolute;
       width: 100%;
       color: #fff; */
-  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
-  height: 100vh;
-  min-height: 100vh;
+  /* background-image: linear-gradient(#083d4f, #10839e, #083d4f); */
+  /* height: 100vh; */
+  /* min-height: 100vh; */
   overflow: hidden;
+  margin: 0;
+  height: 100%;
 }
 
 .slider-div {
@@ -157,7 +140,7 @@ input {
   /* flex: 0 0 auto; */
   width: 35%;
   padding: 1% 25%;
-  margin: 3% 5%;
+  margin: 2% 5%;
   vertical-align: middle;
   /* margin: 10% 10%; */
   background-color: #fff;
@@ -236,6 +219,7 @@ App.css .App {
 
 .carousel-component {
   background-color: #2e5f70;
+  height: 100vh;
 }
 
 /* h1#gallery-header {
@@ -296,8 +280,9 @@ img.carousel-img {
 }
 
 .container {
+  position: relative;
   background-color: #2e5f70;
-  height: 100vh;
+  height: auto;
   padding-left: 0 !important;
 }
 
@@ -737,7 +722,8 @@ label {
     width: 75%;
     height: 6%;
     left: 12.5%;
-    bottom: 7%;
+    /* bottom: 7%; */
+    bottom: 39%;
     background: rgba(196, 196, 196, 0.2);
     border-radius: 42px;
   }
@@ -776,10 +762,6 @@ label {
 } */
 
 /* End of Media Queries */
-
-.container {
-  position: relative;
-}
 
 .location-heading {
   position: absolute;
@@ -980,4 +962,86 @@ img#navButton {
   -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    .safari_only { 
+
+        /* color:#0000FF;  */
+        background-color:#0000FF; 
+
+    }
+}}
+
+/* Gif overlay */
+.outer-1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.outer-1 > .explore-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+}
+
+
+.outer-1 > img {
+  position: relative;
+  z-index: 2;
+}
+
+/* MapBox */
+.map-container {
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+.marker {
+  background-image: url('./media/arttaglogo.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Camera */
+#link-to-ar-button {
+  background-color: #083d4f;
+  border: none;
+  padding: 5% 15%;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#camera-page a {
+  text-decoration: none;
+}
+
+#camera-page a:visited {
+  color:white;
+}
+
+div#camera-page {
+  background-image: linear-gradient(#083d4f, #10839e, #083d4f);
+  height: 80vh;
 }

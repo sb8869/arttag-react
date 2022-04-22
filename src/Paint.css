@@ -61,6 +61,10 @@
   transform: rotate(90deg);
 }
 
+#colorPicker {
+  border: none
+}
+
 .qr-two-container {
   display: inline-block;
   margin: 20px;
@@ -84,17 +88,28 @@
   margin: 0 auto;
 }
 
-/*
+
 .brushes-overlay {
   background: #2e5f70 !important;
   position: absolute;
+  top: 0;
   left: 3%;
   bottom: 17%;
   width: 65%;
-  height: 20%;
+  /* height: 20%; */ /* auto */
   border-radius: 4px;
 }
-*/
+
+.eraser-overlay {
+  background: #2e5f70 !important;
+  position: absolute;
+  right: 10%;
+  bottom: 17%;
+  width: 65%;
+  height: 30%;
+  border-radius: 32.75px;
+}
+
 
 .color-overlay {
     background: #2e5f70 !important;
@@ -189,12 +204,13 @@ span.brushes {
 /* Slider */
 input[type="range"] {
   -webkit-appearance: none;
-  height: 2%;
-  width: 75%;
+  height: 1%;
+  width: 80%;
   background: white;
   border-radius: 5px;
   background-image: linear-gradient(white, white);
   background-repeat: no-repeat;
+  margin-left: 9%
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -229,4 +245,8 @@ input[type="range"]::-webkit-slider-thumb:active {
 .no-scroll, .paint-app {
   overflow: hidden;
 }
+
+/* canvas#defaultCanvas0 {
+  transform: rotate(-90deg);
+} */
 
