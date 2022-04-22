@@ -1,6 +1,9 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 import logo from "./media/arttaglogo.png";
+import BottomNav from './components/BottomNav';
+import backButton from "./media/back.png";
+import { Link } from "react-router-dom";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2I4ODY5IiwiYSI6ImNsMjg4eTZwdDA3MWMza3IxdmZldTgyejkifQ.G80DUdbJAj5zjtcrcP56yA';
 
@@ -104,23 +107,27 @@ class Mapbox extends React.PureComponent {
 
             // make a marker for each feature and add to the map
             new mapboxgl.Marker(el)
-            .setLngLat(feature.geometry.coordinates)
-            .setPopup(
-                new mapboxgl.Popup({ offset: 25 }) // add popups
-                    .setHTML(
-                        `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-                    )
-            )
-            .addTo(map);
+                .setLngLat(feature.geometry.coordinates)
+                .setPopup(
+                    new mapboxgl.Popup({ offset: 25 }) // add popups
+                        .setHTML(
+                            `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+                        )
+                )
+                .addTo(map);
         }
 
-        
+
     }
 
     render() {
         return (
-            <div>
+            <div className="explore-page">
+                <div class="header">
+                    <h1 className="gallery-header"><Link to="/explore"><img src={backButton} alt="backBtn" id="backButton" /></Link>ArtTag</h1>
+                </div>
                 <div ref={this.mapContainer} className="map-container" />
+                <BottomNav></BottomNav>
             </div>
         );
     }

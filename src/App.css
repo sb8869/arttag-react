@@ -22,14 +22,15 @@ body, html {
 
 
 .map-container {
-  height: 100vh;
+  height: 60vh;
+  margin-top: 10vh;
 }
 
 .marker {
   background-image: url('./media/arttaglogo.png');
   background-size: cover;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   cursor: pointer;
 }
