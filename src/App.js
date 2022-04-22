@@ -2,7 +2,7 @@ import Explore from './Explore';
 import Gallery from './Gallery';
 import Landing from './Landing.js'
 import Scan from './Camera'
-import MapBox from './MapBox';
+import MapBox from './mapbox';
 
 import Carousel from './components/Carousel';
 

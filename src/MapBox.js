@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 mapboxgl.accessToken = 'pk.eyJ1Ijoic2I4ODY5IiwiYSI6ImNsMjg4eTZwdDA3MWMza3IxdmZldTgyejkifQ.G80DUdbJAj5zjtcrcP56yA';
 
-class Mapbox extends React.PureComponent {
+class MapBox extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
@@ -133,4 +133,4 @@ class Mapbox extends React.PureComponent {
     }
 }
 
-export default Mapbox;
+export default MapBox;
